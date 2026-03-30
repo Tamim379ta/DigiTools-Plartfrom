@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
+import Cart from './Cart';
 
-const Carts = () => {
+const Carts = ({ dataPromise }) => {
+
+  const data = use(dataPromise);
 
   const [isSelected, setSelected] = useState("products")
   return (
@@ -24,9 +27,18 @@ const Carts = () => {
         </div>
 
         <div>
+          {
+            isSelected === "products" ?
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-15 p-5 md:p-0 mt-10'>
+                {
+                  data.map(tools => <Cart tools={tools} />)
+                }
+              </div> :
 
+              ""
+
+          }
         </div>
-
 
       </div>
 

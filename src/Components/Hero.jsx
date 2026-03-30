@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImg from '../assets/banner.png'
 import { CiPlay1 } from 'react-icons/ci';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
               Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
             </p>
             <div className='flex gap-2'>
-              <button className="btn btn-primary rounded-3xl ">Explore Products</button>
+              <button className="btn btn-primary rounded-3xl ">Explore Products <FaArrowRightLong  /></button>
               <button className='btn flex btn-outline btn-primary rounded-3xl'><CiPlay1 /> Watch Now</button>
             </div>
           </div>

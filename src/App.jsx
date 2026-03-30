@@ -5,9 +5,17 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import StatsSection from './Components/StatsSection'
 import Carts from './Components/Carts'
+import { Suspense } from 'react'
+
+
+const dataFetch = async() => {
+  const res = await fetch("/data.json")
+  return res.json()
+}
 
 function App() {
-
+ 
+  const dataPromise = dataFetch();
 
   return (
     <>
@@ -18,7 +26,9 @@ function App() {
 
       <StatsSection />
 
-      <Carts />
+      <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
+      <Carts dataPromise={dataPromise}/>
+      </Suspense>
 
       <ToastContainer />
 
