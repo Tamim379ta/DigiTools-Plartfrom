@@ -4,8 +4,9 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import StatsSection from './Components/StatsSection'
-import Carts from './Components/Carts'
+import Cards from './Components/Cards'
 import { Suspense } from 'react'
+import Faq from './Components/Faq'
 
 
 const dataFetch = async() => {
@@ -27,8 +28,10 @@ function App() {
       <StatsSection />
 
       <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
-      <Carts dataPromise={dataPromise}/>
+      <Cards dataPromise={dataPromise}/>
       </Suspense>
+
+      <Faq />
 
       <ToastContainer />
 
