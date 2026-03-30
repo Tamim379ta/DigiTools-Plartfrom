@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import StatsSection from './Components/StatsSection'
+import Carts from './Components/Carts'
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
       <Hero />
 
       <StatsSection />
+
+      <Carts />
 
       <ToastContainer />
 
