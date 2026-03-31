@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdDone } from 'react-icons/md';
+import { toast } from 'react-toastify';
 
-const Cart = ({ tools }) => {
+const Cart = ({ tools, cart, setCart }) => {
+
+    const [buyTools, setBuyTools] = useState(false)
+  
+
+  const handelBuy = (tools) => {
+
+    const isExist = cart.find(f => f.name === tools.name);
+    if(isExist){
+      toast.warning("Item Already Exist")
+      return;
+    }
+    setBuyTools(true);
+    setCart([...cart, tools]);
+    toast.success("Item added to the cart")
+
+  }
 
   return (
     <div className='shadow-md rounded-3xl'>
@@ -10,7 +27,7 @@ const Cart = ({ tools }) => {
         <div className='flex justify-between'>
           <div></div>
           <div
-           class={`badge p-4 rounded-3xl ${tools.tagType === "new"? "badge-accent" : tools.tagType === "popular" ?"badge-secondary" : "badge-warning" } `}>
+           className={`badge p-4 rounded-3xl ${tools.tagType === "new"? "badge-accent" : tools.tagType === "popular" ?"badge-secondary" : "badge-warning" } `}>
            {tools.tag}</div>
         </div>
 
@@ -43,7 +60,11 @@ const Cart = ({ tools }) => {
               {tools.features[2]}</li>
           </ul>
 
-          <button className='btn btn-block btn-primary py-5 rounded-3xl'>Buy Now</button>
+          <button type="button" onClick={() => handelBuy(tools)} className={`btn btn-block  py-5 rounded-3xl ${buyTools === true ? "btn-success" : "btn-primary"}`}>
+            {
+              buyTools === true ? "Add To Cart" : "Buy Now"
+            }
+          </button>
 
         </div>
 

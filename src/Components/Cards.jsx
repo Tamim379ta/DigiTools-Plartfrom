@@ -1,13 +1,22 @@
 import React, { use, useState } from 'react';
 import Card from './Card';
+import Carts from './Carts';
+import Navbar from './Navbar';
 
-const Carts = ({ dataPromise }) => {
+const Cards = ({ dataPromise, }) => {
 
   const data = use(dataPromise);
+  const [cart, setCart] = useState([])
+
+
+
 
   const [isSelected, setSelected] = useState("products")
   return (
+
     <div className='container mx-auto mt-20'>
+
+      <Navbar className='disabled:none' cart={cart} />
 
       <div>
         <div className='text-center space-y-4'>
@@ -23,7 +32,7 @@ const Carts = ({ dataPromise }) => {
           <button onClick={() => setSelected("cart")}
             className={isSelected === "cart" ?
               'btn px-10 rounded-3xl  btn-primary' :
-              'btn px-10 rounded-3xl'}>Cart</button>
+              'btn px-10 rounded-3xl'}>Cart(<span>{cart.length}</span>)</button>
         </div>
 
         <div>
@@ -31,11 +40,14 @@ const Carts = ({ dataPromise }) => {
             isSelected === "products" ?
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-15 p-5 md:p-0 mt-10'>
                 {
-                  data.map(tools => <Card tools={tools} />)
+                  data.map(tools => <Card
+                    cart={cart}
+                    setCart={setCart}
+                    tools={tools} />)
                 }
               </div> :
 
-              ""
+             <Carts cart={cart} setCart={setCart} />
 
           }
         </div>
@@ -46,4 +58,4 @@ const Carts = ({ dataPromise }) => {
   );
 };
 
-export default Carts;
+export default Cards;

@@ -21,6 +21,7 @@ function App() {
  
   const dataPromise = dataFetch();
 
+
   return (
     <>
 
@@ -31,7 +32,10 @@ function App() {
       <StatsSection />
 
       <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
-      <Cards dataPromise={dataPromise}/>
+      <Cards
+       dataPromise={dataPromise}
+       
+       />
       </Suspense>
 
       <Faq />

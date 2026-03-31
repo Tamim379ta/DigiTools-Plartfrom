@@ -42,7 +42,7 @@ const Pricing = () => {
         </div>
 
         <div className="card bg-primary text-white shadow-sm relative">
-          <div className='badge badge-warning mt-[-20px] ml-30 p-5 rounded-3xl absolute'>Most Popular</div>
+          <div className='badge badge-warning -mt-5 ml-30 p-5 rounded-3xl absolute'>Most Popular</div>
           <div className="card-body">
             <div className="flex flex-col gap-2">
               <h2 className="text-3xl font-bold">Pro</h2>
