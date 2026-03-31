@@ -35,7 +35,7 @@ const Faq = () => {
         <div className='shadow-2xl p-5 rounded-2xl space-y-3'>
           <div className='flex justify-between' >
             <div></div>
-            <div className='badge badge-primary rounded-4xl p-4 font-semibold'>01</div>
+            <div className='badge badge-primary rounded-4xl p-4 font-semibold'>02</div>
           </div>
           <div className='flex justify-center'>
             <img
@@ -53,7 +53,7 @@ const Faq = () => {
         <div className='shadow-2xl p-5 rounded-2xl space-y-3'>
           <div className='flex justify-between' >
             <div></div>
-            <div className='badge badge-primary rounded-4xl p-4 font-semibold'>01</div>
+            <div className='badge badge-primary rounded-4xl p-4 font-semibold'>03</div>
           </div>
           <div className='flex justify-center'>
             <img

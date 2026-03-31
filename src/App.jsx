@@ -7,6 +7,7 @@ import StatsSection from './Components/StatsSection'
 import Cards from './Components/Cards'
 import { Suspense } from 'react'
 import Faq from './Components/Faq'
+import Pricing from './Components/Pricing'
 
 
 const dataFetch = async() => {
@@ -32,6 +33,8 @@ function App() {
       </Suspense>
 
       <Faq />
+
+      <Pricing />
 
       <ToastContainer />
 
