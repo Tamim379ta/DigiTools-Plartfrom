@@ -16,8 +16,6 @@ const Cards = ({ dataPromise, }) => {
 
     <div className='container mx-auto mt-20'>
 
-      <Navbar className='disabled:none' cart={cart} />
-
       <div>
         <div className='text-center space-y-4'>
           <h1 className='text-5xl font-bold'>Premium Digital Tools</h1>
