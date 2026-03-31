@@ -4,7 +4,7 @@ import { MdDone } from 'react-icons/md';
 const Cart = ({ tools }) => {
 
   return (
-    <div className='border-2 rounded-3xl'>
+    <div className='shadow-md rounded-3xl'>
 
       <div className="p-5">
         <div className='flex justify-between'>

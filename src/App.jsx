@@ -8,6 +8,8 @@ import Cards from './Components/Cards'
 import { Suspense } from 'react'
 import Faq from './Components/Faq'
 import Pricing from './Components/Pricing'
+import CTASection from './Components/CTASection'
+import Footer from './Components/Footer'
 
 
 const dataFetch = async() => {
@@ -35,6 +37,10 @@ function App() {
       <Faq />
 
       <Pricing />
+
+      <CTASection />
+
+      <Footer />
 
       <ToastContainer />
 

@@ -5,7 +5,7 @@ import Img3 from '../assets/rocket.png'
 
 const Faq = () => {
   return (
-    <div className='container mx-auto my-20'>
+    <div className='container bg-base-200 mx-auto mt-10 py-30'>
 
       <div className='text-center space-y-4'>
         <h1 className='text-4xl  font-bold'>Get Started in 3 Steps</h1>
