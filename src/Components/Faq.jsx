@@ -14,7 +14,7 @@ const Faq = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 mt-10  gap-10 px-5 lg:px-20 '>
 
-        <div className='shadow-2xl p-5 rounded-2xl space-y-3'>
+        <div className='shadow-2xl p-5 rounded-2xl space-y-3  hover:scale-102 transition duration-300'>
           <div className='flex justify-between' >
             <div></div>
             <div className='badge badge-primary rounded-4xl p-4 font-semibold'>01</div>
@@ -32,7 +32,7 @@ const Faq = () => {
         </div>
 
 
-        <div className='shadow-2xl p-5 rounded-2xl space-y-3'>
+        <div className='shadow-2xl p-5 rounded-2xl space-y-3  hover:scale-102 transition duration-300'>
           <div className='flex justify-between' >
             <div></div>
             <div className='badge badge-primary rounded-4xl p-4 font-semibold'>02</div>
@@ -50,7 +50,7 @@ const Faq = () => {
         </div>
 
 
-        <div className='shadow-2xl p-5 rounded-2xl space-y-3'>
+        <div className='shadow-2xl p-5 rounded-2xl space-y-3  hover:scale-102 transition duration-300'>
           <div className='flex justify-between' >
             <div></div>
             <div className='badge badge-primary rounded-4xl p-4 font-semibold'>03</div>

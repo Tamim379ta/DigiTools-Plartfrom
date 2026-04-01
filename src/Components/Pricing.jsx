@@ -10,7 +10,7 @@ const Pricing = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 md:p-10 gap-10 items-stretch '>
 
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-100 shadow-sm  hover:scale-102 transition duration-300">
           <div className="card-body">
             <div className="flex flex-col gap-2">
               <h2 className="text-3xl font-bold">Starter</h2>
@@ -41,7 +41,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="card bg-primary text-white shadow-sm relative">
+        <div className="card bg-primary text-white shadow-sm relative  hover:scale-102 transition duration-300">
           <div className='badge badge-warning -mt-5 ml-30 p-5 rounded-3xl absolute'>Most Popular</div>
           <div className="card-body">
             <div className="flex flex-col gap-2">
@@ -81,7 +81,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-100 shadow-sm  hover:scale-102 transition duration-300">
           <div className="card-body">
             <div className="flex flex-col gap-2">
               <h2 className="text-3xl font-bold">Enterprise</h2>

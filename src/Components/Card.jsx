@@ -21,7 +21,7 @@ const Cart = ({ tools, cart, setCart }) => {
   }
 
   return (
-    <div className='shadow-md rounded-3xl'>
+    <div className='shadow-md rounded-3xl  hover:scale-102 transition duration-300'>
 
       <div className="p-5">
         <div className='flex justify-between'>
