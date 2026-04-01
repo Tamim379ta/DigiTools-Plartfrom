@@ -1,16 +1,34 @@
-# React + Vite
+## 📌 Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools-Platform – Your Digital Tools Marketplace
 
-Currently, two official plugins are available:
+## 🧠 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DigiTools is a modern web platform where users can explore and purchase useful digital products like Starter Resume Kits, Pro Resume Builders, and more. The goal is to make professional tools accessible, affordable, and easy to use for everyone.
 
-## React Compiler
+This project focuses on a smooth user experience, clean UI design, and efficient state management for handling cart and purchases.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Technologies Used  
+- ⚛️ React.js  
+- 🎨 Tailwind CSS / DaisyUI  
+- 🧠 JavaScript (ES6+)  
+- 🔔 React Toastify  
+- 🎯 React Icons  
+- 🌐 Netlify
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## ✨ Features
+
+1. Add to Cart System
+Users can easily add digital products to their cart and manage selected items dynamically.
+
+2. Instant Purchase UI
+"Buy Now" button updates UI instantly without page reload, ensuring a smooth experience.
+
+3. Dynamic Product Rendering
+All products are displayed dynamically using JSON data, making the platform scalable and easy to update.
+
+🔗 Live Demo
+
+👉 (https://digitools-platfrom-11.netlify.app/)
