@@ -11,7 +11,7 @@ const Cart = ({ c,cart, setCart }) => {
   return (
     <>
       <div className='mt-5'>
-        <div className='flex justify-between p-5 rounded-2xl border-2 border-gray-200 shadow-xl' >
+        <div className='flex justify-between p-5 rounded-2xl border-2 border-gray-200 bg-base-200' >
           <div className='flex gap-4'>
             <img className='h-10 p-1 shadow-xs rounded-2xl' src={c.image} alt="" />
             <div className='flex flex-col'>
